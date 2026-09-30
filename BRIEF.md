@@ -9,10 +9,10 @@ The function calculates the total cost of a shopping cart including VAT and ship
 
 ## Files allowed to modify
 
-| File | Purpose |
-| --- | --- |
-| `src/cart.js` | Implement the function here (replace the `throw new Error('not implemented')` stub) |
-| `test/cart.test.js` | Add more test cases here |
+| File                | Purpose                                                                             |
+| ------------------- | ----------------------------------------------------------------------------------- |
+| `src/cart.js`       | Implement the function here (replace the `throw new Error('not implemented')` stub) |
+| `test/cart.test.js` | Add more test cases here                                                            |
 
 Do **not** touch `package.json`, `RULES.md`, `.github/`, or any other file.
 
@@ -54,12 +54,12 @@ result   = subtotal + VAT + shipping   ← round to integer, return as number
 
 ## Edge cases and error handling
 
-| Case | Expected behaviour |
-| --- | --- |
-| `items` is an empty array `[]` | Return `0` immediately — no VAT, no shipping |
-| `price < 0` (negative price) | Throw `RangeError` |
-| `qty` is not a positive integer (0, -1, 1.5, NaN, …) | Throw `RangeError` |
-| `subtotal === freeShipFrom` exactly | Shipping = 0 (free at the threshold, not just above it) |
+| Case                                                 | Expected behaviour                                      |
+| ---------------------------------------------------- | ------------------------------------------------------- |
+| `items` is an empty array `[]`                       | Return `0` immediately — no VAT, no shipping            |
+| `price < 0` (negative price)                         | Throw `RangeError`                                      |
+| `qty` is not a positive integer (0, -1, 1.5, NaN, …) | Throw `RangeError`                                      |
+| `subtotal === freeShipFrom` exactly                  | Shipping = 0 (free at the threshold, not just above it) |
 
 ---
 
